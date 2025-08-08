@@ -49,6 +49,7 @@ elif (com == -1 and you == 1) or (com == 1 and you == 0) or (com == 0 and you ==
 else:
     print("You Lose!")
 
+```
 
 ## Output
 Snake - Water - Gun
@@ -61,12 +62,13 @@ You Win!
 ---
 
 ## 📁 File Structure
-
+```
 Snake_Water_Gun_Game/
 ├── snake-water-gun.py   # Main game logic
 └── README.md            # Project documentation
-
+```
 ---
 
 ### 🚀 Run the Game
+```
 python snake-water-gun.py
