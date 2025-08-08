@@ -52,13 +52,14 @@ else:
 ```
 
 ## Output
+```
 Snake - Water - Gun
 Select to [snake = s], [water = w], [gun = g]
 Enter your choice: s
 You selected: Snake
 Computer selected: Water
 You Win!
-
+```
 ---
 
 ## 📁 File Structure
