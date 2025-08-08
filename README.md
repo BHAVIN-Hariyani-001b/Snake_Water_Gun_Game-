@@ -1,4 +1,3 @@
-# Snake_Water_Gun_Game-
 # 🐍 Snake-Water-Gun Game (Python)
 
 A fun terminal-based mini-game based on the classic **Snake-Water-Gun** concept, similar to Rock-Paper-Scissors.
@@ -25,18 +24,49 @@ A fun terminal-based mini-game based on the classic **Snake-Water-Gun** concept,
 
 ---
 
-## 🧠 Game Logic
+## 🧠 Game Logic (Python snippet)
 
 ```python
-youDict = {"s":1,"w":-1,"g":0}
+youDict = {"s": 1, "w": -1, "g": 0}
 options = {1: "Snake", -1: "Water", 0: "Gun"}
 
+com = random.choice(list(options.keys()))
+youStr = input("Enter your choice (s/w/g): ").lower()
 
-## ▶️ Example Output
+if youStr not in youDict:
+    print("Invalid choice!")
+    exit()
 
+you = youDict[youStr]
+
+print(f"You selected: {options[you]}")
+print(f"Computer selected: {options[com]}")
+
+if com == you:
+    print("It's a draw!")
+elif (com == -1 and you == 1) or (com == 1 and you == 0) or (com == 0 and you == -1):
+    print("You Win!")
+else:
+    print("You Lose!")
+
+
+## Output
 Snake - Water - Gun
-Select to [snack = s] , [water = w] , [gun = g]
+Select to [snake = s], [water = w], [gun = g]
 Enter your choice: s
-You are select is : Snake
-Computer select is : Water
+You selected: Snake
+Computer selected: Water
 You Win!
+
+---
+
+## 📁 File Structure
+
+Snake_Water_Gun_Game/
+├── snake-water-gun.py   # Main game logic
+└── README.md            # Project documentation
+
+---
+
+### 🚀 Run the Game
+python snake-water-gun.py
