@@ -51,7 +51,7 @@ else:
 
 ```
 
-## Output
+## ▶️ Output
 ```
 Snake - Water - Gun
 Select to [snake = s], [water = w], [gun = g]
