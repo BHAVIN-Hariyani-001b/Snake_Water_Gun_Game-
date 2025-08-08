@@ -26,6 +26,7 @@ A fun terminal-based mini-game based on the classic **Snake-Water-Gun** concept,
 
 ## 🧠 Game Logic (Python snippet)
 
+```python
 youDict = {"s": 1, "w": -1, "g": 0}
 options = {1: "Snake", -1: "Water", 0: "Gun"}
 
